@@ -1,6 +1,6 @@
 # MPAD &mdash; Official PyTorch implementation
 
-This repository contains code for our ECCV2026 paper **"Unified Multi-plane Autoregressive Diffusion for 3D Multi-Contrast MRI Synthesis"**.
+This repository contains code for ECCV2026 paper **"Unified Multi-plane Autoregressive Diffusion for 3D Multi-Contrast MRI Synthesis"**.
 
 Multi-Plane Autoregressive Diffusion (MPAD) compresses MRI volumes with a 3D KL-regularized autoencoder and synthesizes target contrasts with a 2D diffusion model that runs autoregressively across orthogonal latent planes.
 
