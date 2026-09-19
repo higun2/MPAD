@@ -29,7 +29,7 @@ The `vqgan` directory keeps its historical name from the upstream codebase. The 
 
 Each stage keeps its own `taming` package, so always run a stage's scripts from that stage's directory. `train.sh` does this for you; run `sample.py` and `evaluate.py` from `mpad/`. Do not `pip install` either stage as a package.
 
-## Installation
+## Requirements
 
 ```bash
 conda env create -f environment.yaml
