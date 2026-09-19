@@ -1,0 +1,23 @@
+pytorch-lightning==1.4.2
+torchmetrics==0.6.0
+numpy==1.24.4
+omegaconf==2.1.1
+monai==1.2.0
+nibabel==5.2.1
+einops==0.8.0
+Pillow==10.4.0
+packaging==23.2
+tqdm==4.66.4
+tensorboard==2.11.2
+protobuf==3.19.6
+
+# Stage 2 contrast text conditioning
+open_clip_torch==2.23.0
+transformers==4.35.2
+timm==0.9.12
+
+# Stage 1 contrast text conditioning
+git+https://github.com/openai/CLIP.git@a1d071733d7111c9c014f024669f959182114e33
+
+# Only used by the --debug post-mortem hook in main.py
+pudb
