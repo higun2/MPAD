@@ -78,7 +78,7 @@ bash train.sh
 
 Edit `configs/mpad.yaml` to set the stage 1 checkpoint and the train/validation/test directories. The first-stage network is frozen and MPAD learns masked latent slice reconstruction. Training starts from scratch unless you pass a resume argument; use `-r logs/<run-directory>` to continue a run.
 
-## Synthesize a missing contrast
+## Synthesizing
 
 Run from `mpad/`. This entry point needs only the source volume:
 
@@ -92,7 +92,7 @@ python sample.py --config configs/mpad.yaml \
 
 It follows the three-plane sequence and averages the resulting latents. It takes one source contrast per invocation at batch size one and supports T1, T2 and PD; run it again for another target. A full MPAD checkpoint already contains the autoencoder weights, so no separate stage 1 checkpoint is needed here.
 
-## Paired evaluation
+## Evaluation
 
 This route reads every contrast, including the target, and reports metrics:
 
